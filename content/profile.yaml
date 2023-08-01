@@ -8,22 +8,21 @@
   company: Habrie EdTech
   for_hire: true
   focus: Mastering React Native
-  focus_url: https://gatsbyjs.org
+  focus_url: https://reactnative.dev
   about: |
-    Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
+    Dedicated Full Stack Developer with 4 years of experience, interested in building pixel perfect, smooth mobile and web experiences, scaling systems up, and shipping reliable applications.
 
-    User generated content in real-time will have multiple touchpoints for offshoring. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
   skills:
     - React Native
     - Redux
     - React
+    - NodeJS
     - Typescript
-    # - HTML / CSS
-    # - Ruby on Rails
+    - AWS
   tools:
-    - React
     - VSCode
-    # - Gatsby
+    - XCode
+    - Flipper
   budget:
     currency: $
     min: 5
