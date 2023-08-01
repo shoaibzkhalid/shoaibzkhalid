@@ -1,7 +1,12 @@
 {
+  "name": "shoaibkhalid",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "dev": "gatsby develop",
-    "push": "git add . && git commit -F release-notes.txt && git push cat main && vercel"
+    "push": "git add . && git commit -F release-notes.txt && git push cat main",
+    "prod": "gatsby build && vercel"
   },
   "dependencies": {
     "@wkocjan/gatsby-theme-intro": "^2.0.1",
@@ -9,9 +14,5 @@
     "gatsby-plugin-manifest": "^5.11.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
-  },
-  "name": "shoaibkhalid",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  }
 }
