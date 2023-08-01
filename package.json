@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@wkocjan/gatsby-theme-intro": "^2.0.1",
+    "gatsby": "^3.15.0",
+    "gatsby-plugin-manifest": "^5.11.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "name": "shoaibkhalid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
