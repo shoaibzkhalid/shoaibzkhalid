@@ -1,0 +1,113 @@
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/fonts/OpenSans-VariableFont_wdth,wght.ttf b/node_modules/@wkocjan/gatsby-theme-intro/fonts/OpenSans-VariableFont_wdth,wght.ttf
+new file mode 100644
+index 0000000..e4142bf
+Binary files /dev/null and b/node_modules/@wkocjan/gatsby-theme-intro/fonts/OpenSans-VariableFont_wdth,wght.ttf differ
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/fonts/Roboto-Regular.ttf b/node_modules/@wkocjan/gatsby-theme-intro/fonts/Roboto-Regular.ttf
+new file mode 100644
+index 0000000..ddf4bfa
+Binary files /dev/null and b/node_modules/@wkocjan/gatsby-theme-intro/fonts/Roboto-Regular.ttf differ
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/custom-fonts/custom-fonts.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/custom-fonts/custom-fonts.js
+index e51bf87..48f531e 100644
+--- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/custom-fonts/custom-fonts.js
++++ b/node_modules/@wkocjan/gatsby-theme-intro/src/components/custom-fonts/custom-fonts.js
+@@ -1,13 +1,6 @@
+-import React from "react"
+-import { Helmet } from "react-helmet"
++import React from 'react'
++import { Helmet } from 'react-helmet'
+ 
+-const CustomFonts = () => (
+-  <Helmet>
+-    <link
+-      rel="stylesheet"
+-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+-    />
+-  </Helmet>
+-)
++const CustomFonts = () => <Helmet></Helmet>
+ 
+ export default CustomFonts
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/styles/style.css b/node_modules/@wkocjan/gatsby-theme-intro/src/styles/style.css
+index 7f39374..4b25caf 100644
+--- a/node_modules/@wkocjan/gatsby-theme-intro/src/styles/style.css
++++ b/node_modules/@wkocjan/gatsby-theme-intro/src/styles/style.css
+@@ -1,3 +1,36 @@
++@font-face {
++  font-family: 'Roboto';
++  src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
++  /* Add other font formats here if necessary */
++  font-weight: normal;
++  font-style: normal;
++}
++
++@font-face {
++  font-family: 'Open Sans';
++  src: url('../../fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
++  /* Add other font formats here if necessary */
++  font-weight: normal;
++  font-style: normal;
++
++  color: red;
++}
++
++.gatsby-image-wrapper {
++  position: relative;
++  overflow: hidden;
++  height: 0;
++  padding-bottom: 56.25%; /* 16:9 aspect ratio (change as needed) */
++}
++
++.gatsby-image-wrapper img {
++  position: absolute;
++  top: 0;
++  left: 0;
++  width: 100%;
++  height: 100%;
++}
++
+ @tailwind base;
+ 
+ @tailwind components;
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/tailwind.config.js b/node_modules/@wkocjan/gatsby-theme-intro/tailwind.config.js
+index cf025cd..caceb64 100644
+--- a/node_modules/@wkocjan/gatsby-theme-intro/tailwind.config.js
++++ b/node_modules/@wkocjan/gatsby-theme-intro/tailwind.config.js
+@@ -1,8 +1,7 @@
+-const color = require("color")
++const color = require('color')
+ 
+-module.exports = theme => {
+-  const colors =
+-    typeof theme === "string" ? require(`./src/themes/${theme}`) : theme
++module.exports = (theme) => {
++  const colors = typeof theme === 'string' ? require(`./src/themes/${theme}`) : theme
+ 
+   return {
+     purge: {
+@@ -14,21 +13,19 @@ module.exports = theme => {
+     darkMode: false,
+     theme: {
+       fontFamily: {
+-        header: ["Source Sans Pro", "sans-serif"],
+-        text: ["Roboto", "sans-serif"],
++        header: ['Open Sans', 'sans-serif'],
++        text: ['Roboto', 'sans-serif'],
+       },
+       extend: {
+         colors: {
+           ...colors,
+-          "back-light": color(colors.back)
+-            .lighten(0.18)
+-            .hex(),
++          'back-light': color(colors.back).lighten(0.18).hex(),
+         },
+         borderRadius: {
+-          lg: "1rem",
++          lg: '1rem',
+         },
+         spacing: {
+-          "14": "3.5rem",
++          14: '3.5rem',
+         },
+       },
+     },

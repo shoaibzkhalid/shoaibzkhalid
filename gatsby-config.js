@@ -14,42 +14,6 @@ module.exports = {
         showThemeLogo: false,
       },
     },
-    // {
-    //   resolve: `gatsby-omni-font-loader`,
-    //   options: {
-    //     enableListener: true,
-    //     // render-blocking (FOUT rare but fonts render blocking)or async
-    //     mode: 'render-blocking',
-
-    //     preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
-    //     custom: [
-    //       {
-    //         name: `Roboto`,
-    //         file: `/fonts/roboto/500.css`,
-    //       },
-    //       {
-    //         name: `Roboto`,
-    //         file: `/fonts/roboto/400.css`,
-    //       },
-    //       {
-    //         name: `Open Sans`,
-    //         file: `/fonts/open-sans/300.css`,
-    //       },
-    //       {
-    //         name: `Open Sans`,
-    //         file: `/fonts/open-sans/400.css`,
-    //       },
-    //       {
-    //         name: `Open Sans`,
-    //         file: `/fonts/open-sans/600.css`,
-    //       },
-    //       {
-    //         name: `Open Sans`,
-    //         file: `/fonts/open-sans/700.css`,
-    //       },
-    //     ],
-    //   },
-    // },
 
     {
       resolve: `gatsby-plugin-purgecss`,
