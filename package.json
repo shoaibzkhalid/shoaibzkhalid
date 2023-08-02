@@ -4,19 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop",
+    "dev": "gatsby clean && gatsby develop",
     "push": "git add . && git commit -F release-notes.txt && git push cat main",
     "prod": "gatsby build && vercel"
   },
   "dependencies": {
-    "@fontsource/open-sans": "^5.0.5",
-    "@fontsource/roboto": "^5.0.5",
     "@wkocjan/gatsby-theme-intro": "^2.0.1",
     "gatsby": "^3.15.0",
     "gatsby-omni-font-loader": "^2.0.2",
-    "gatsby-plugin-google-fonts-v2": "^1.0.1",
     "gatsby-plugin-manifest": "^5.11.0",
-    "gatsby-plugin-preconnect": "^1.4.0",
+    "gatsby-plugin-purgecss": "^6.2.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   }

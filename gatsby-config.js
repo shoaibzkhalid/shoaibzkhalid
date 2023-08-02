@@ -15,55 +15,55 @@ module.exports = {
       },
     },
     // {
-    //   resolve: 'gatsby-plugin-manifest',
+    //   resolve: `gatsby-omni-font-loader`,
     //   options: {
-    //     icon: `/static/favicon.ico`,
+    //     enableListener: true,
+    //     // render-blocking (FOUT rare but fonts render blocking)or async
+    //     mode: 'render-blocking',
 
-    //     icons: [
+    //     preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+    //     custom: [
     //       {
-    //         src: `/static/images/favicon.png`,
-    //         sizes: `32x32`,
-    //         type: `image/png`,
+    //         name: `Roboto`,
+    //         file: `/fonts/roboto/500.css`,
+    //       },
+    //       {
+    //         name: `Roboto`,
+    //         file: `/fonts/roboto/400.css`,
+    //       },
+    //       {
+    //         name: `Open Sans`,
+    //         file: `/fonts/open-sans/300.css`,
+    //       },
+    //       {
+    //         name: `Open Sans`,
+    //         file: `/fonts/open-sans/400.css`,
+    //       },
+    //       {
+    //         name: `Open Sans`,
+    //         file: `/fonts/open-sans/600.css`,
+    //       },
+    //       {
+    //         name: `Open Sans`,
+    //         file: `/fonts/open-sans/700.css`,
     //       },
     //     ],
     //   },
     // },
 
     {
-      resolve: `gatsby-omni-font-loader`,
+      resolve: `gatsby-plugin-purgecss`,
       options: {
-        enableListener: true,
-        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
-        web: [
-          {
-            name: `Roboto`,
-            file: `/static/fonts/roboto/500.css`,
-          },
-          {
-            name: `Roboto`,
-            file: `/static/fonts/roboto/400.css`,
-          },
-          {
-            name: `Open Sans`,
-            file: `/static/fonts/open-sans/300.css`,
-          },
-          {
-            name: `Open Sans`,
-            file: `/static/fonts/open-sans/400.css`,
-          },
-          {
-            name: `Open Sans`,
-            file: `/static/fonts/open-sans/600.css`,
-          },
-          {
-            name: `Open Sans`,
-            file: `/static/fonts/open-sans/700.css`,
-          },
-          {
-            name: `Open Sans`,
-            file: `/static/fonts/open-sans/300.css`,
-          },
-        ],
+        // printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+        tailwind: true, // Enable tailwindcss support
+        ignore: ['node_modules/@wkocjan/gatsby-theme-intro'], // Ignore files/folders
+        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+        purgeCSSOptions: {
+          // https://purgecss.com/configuration.html#options
+          // safelist: ['safelist'], // Don't remove this selector
+        },
+        // More options defined here https://purgecss.com/configuration.html#options
       },
     },
   ],
