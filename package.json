@@ -3,9 +3,6 @@
   "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
-  "config": {
-    "unsafe-perm": true
-  },
   "scripts": {
     "dev": "gatsby clean && gatsby develop",
     "push": "git add . && git commit -F release-notes.txt && git push cat main",
@@ -13,7 +10,7 @@
     "apply-patch": "npx patch-package @wkocjan/gatsby-theme-intro"
   },
   "dependencies": {
-    "@wkocjan/gatsby-theme-intro": "^2.0.1",
+    "@wkocjan/gatsby-theme-intro": "github:shoaibzkhalid/gatsby-theme-intro",
     "gatsby": "^3.15.0",
     "gatsby-plugin-purgecss": "^6.2.1",
     "patch-package": "^8.0.0",

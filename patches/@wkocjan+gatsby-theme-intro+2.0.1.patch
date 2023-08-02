@@ -1,11 +1,18 @@
-diff --git a/node_modules/@wkocjan/gatsby-theme-intro/fonts/OpenSans-VariableFont_wdth,wght.ttf b/node_modules/@wkocjan/gatsby-theme-intro/fonts/OpenSans-VariableFont_wdth,wght.ttf
-new file mode 100644
-index 0000000..e4142bf
-Binary files /dev/null and b/node_modules/@wkocjan/gatsby-theme-intro/fonts/OpenSans-VariableFont_wdth,wght.ttf differ
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/fonts/Roboto-Regular.ttf b/node_modules/@wkocjan/gatsby-theme-intro/fonts/Roboto-Regular.ttf
 new file mode 100644
-index 0000000..ddf4bfa
-Binary files /dev/null and b/node_modules/@wkocjan/gatsby-theme-intro/fonts/Roboto-Regular.ttf differ
+index 0000000..e69de29
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/fonts/SourceSansPro-Bold.otf b/node_modules/@wkocjan/gatsby-theme-intro/fonts/SourceSansPro-Bold.otf
+new file mode 100644
+index 0000000..98dbee7
+Binary files /dev/null and b/node_modules/@wkocjan/gatsby-theme-intro/fonts/SourceSansPro-Bold.otf differ
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/fonts/SourceSansPro-ExtraLight.otf b/node_modules/@wkocjan/gatsby-theme-intro/fonts/SourceSansPro-ExtraLight.otf
+new file mode 100644
+index 0000000..f885ce7
+Binary files /dev/null and b/node_modules/@wkocjan/gatsby-theme-intro/fonts/SourceSansPro-ExtraLight.otf differ
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/fonts/SourceSansPro-Light.otf b/node_modules/@wkocjan/gatsby-theme-intro/fonts/SourceSansPro-Light.otf
+new file mode 100644
+index 0000000..159979f
+Binary files /dev/null and b/node_modules/@wkocjan/gatsby-theme-intro/fonts/SourceSansPro-Light.otf differ
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/custom-fonts/custom-fonts.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/custom-fonts/custom-fonts.js
 index e51bf87..48f531e 100644
 --- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/custom-fonts/custom-fonts.js
@@ -28,10 +35,10 @@ index e51bf87..48f531e 100644
  
  export default CustomFonts
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/styles/style.css b/node_modules/@wkocjan/gatsby-theme-intro/src/styles/style.css
-index 7f39374..4b25caf 100644
+index 7f39374..915a5ca 100644
 --- a/node_modules/@wkocjan/gatsby-theme-intro/src/styles/style.css
 +++ b/node_modules/@wkocjan/gatsby-theme-intro/src/styles/style.css
-@@ -1,3 +1,36 @@
+@@ -1,3 +1,54 @@
 +@font-face {
 +  font-family: 'Roboto';
 +  src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
@@ -42,12 +49,30 @@ index 7f39374..4b25caf 100644
 +
 +@font-face {
 +  font-family: 'Open Sans';
-+  src: url('../../fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
++  src: url('../../fonts/SourceSansPro-Bold.otf') format('truetype');
++  /* Add other font formats here if necessary */
++  font-weight: bold;
++  font-style: normal;
++}
++
++@font-face {
++  font-family: 'Open Sans';
++  src: url('../../fonts/SourceSansPro-ExtraLight.otf') format('truetype');
 +  /* Add other font formats here if necessary */
 +  font-weight: normal;
 +  font-style: normal;
++}
 +
-+  color: red;
++@font-face {
++  font-family: 'Open Sans';
++  /* src: url('../../fonts/SourceSansPro-Black.otf') format('truetype'); */
++  /* src: url('../../fonts/SourceSansPro-Light.otf') format('truetype'); */
++  /* src: url('../../fonts/SourceSansPro-Regular.otf') format('truetype'); */
++  src: url('../../fonts/SourceSansPro-Light.otf') format('truetype');
++  /* src: url('../../fonts/SourceSansPro-Semibold.otf') format('truetype'); */
++  /* Add other font formats here if necessary */
++  font-weight: normal;
++  font-style: normal;
 +}
 +
 +.gatsby-image-wrapper {

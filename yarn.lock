@@ -2134,10 +2134,9 @@
     "@webassemblyjs/ast" "1.11.6"
     "@xtuc/long" "4.2.2"
 
-"@wkocjan/gatsby-theme-intro@^2.0.1":
+"@wkocjan/gatsby-theme-intro@github:shoaibzkhalid/gatsby-theme-intro":
   version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@wkocjan/gatsby-theme-intro/-/gatsby-theme-intro-2.0.1.tgz#4a00a487c1881e0927965b51e5c1d47b08798520"
-  integrity sha512-IuSM1wqKxnlrt6Ytpbac3twF53nO1p7bRGgWE8rWQmj+2xEcEZr8lJqjLywMkpMHQ2dptJtb2Zvu2y/Q0SRMkg==
+  resolved "https://codeload.github.com/shoaibzkhalid/gatsby-theme-intro/tar.gz/0e9281a8dc1a9e8b07a1ffb6f04dc1d67d184a9d"
   dependencies:
     autoprefixer "^10.2.5"
     color "^3.1.3"
