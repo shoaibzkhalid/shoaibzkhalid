@@ -9,7 +9,7 @@
     - Redux
     - NodeJS
     - Prisma
-  # icon: github
+  icon: website
 
 - name: CB Percursos
   url: https://github.com/shoaibzkhalid/cb_percursos
