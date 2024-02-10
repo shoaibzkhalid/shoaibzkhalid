@@ -3,26 +3,26 @@
   name: Shoaib Khalid
   profession: React Native Engineer
   image: images/profile.jpg
-  location: Karachi, Pakistan
+  location: Dubai, UAE
   relocation: true
   company: Habrie EdTech
   for_hire: true
   focus: Mastering React Native
   focus_url: https://reactnative.dev
   about: |
-    Dedicated Full Stack Developer with 4 years of experience, interested in building pixel perfect, smooth mobile and web experiences, scaling systems up, and shipping reliable applications.
+    Meta-certified Full Stack React Native Developer with 5 years of experience, expert in creating awesome, smooth user experiences by leveraging React Native's components and APIs. Ready to contribute expertise with dynamic teams in an exciting mobile development opportunity.
 
   skills:
     - React Native
     - Redux
-    - React
     - NodeJS
+    # - React
+    # - Typescript
+    # - AWS
+  tools:
+    - Expo
     - Typescript
     - AWS
-  tools:
-    - VSCode
-    - XCode
-    - Flipper
   budget:
     currency: $
     min: 5

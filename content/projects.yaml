@@ -19,13 +19,12 @@
     - React Native
     - Redux
   icon: github
-
-- name: YourTravel
-  url: https://github.com/shoaibzkhalid/your-travel
-  description: A mobile application to identify landmarks along with covid stats.
-  status: live
-  tags:
-    - React Native
-    - Redux
-  icon: github
-#   image: images/project.jpg
+# - name: YourTravel
+#   url: https://github.com/shoaibzkhalid/your-travel
+#   description: A mobile application to identify landmarks along with covid stats.
+#   status: live
+#   tags:
+#     - React Native
+#     - Redux
+#   icon: github
+# #   image: images/project.jpg
