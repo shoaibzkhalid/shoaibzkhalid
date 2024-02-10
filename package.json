@@ -1,5 +1,6 @@
 {
   "name": "shoaibkhalid",
+  "author": "Shoaib Khalid",
   "version": "1.0.6",
   "main": "index.js",
   "license": "MIT",
@@ -12,12 +13,7 @@
     "@wkocjan/gatsby-theme-intro": "github:shoaibzkhalid/gatsby-theme-intro",
     "gatsby": "^3.15.0",
     "gatsby-plugin-purgecss": "^6.2.1",
-    "gatsby-plugin-vercel": "^1.0.4",
-    "patch-package": "^8.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
-  },
-  "devDependencies": {
-    "gatsby-plugin-favicons": "^2.0.0"
   }
 }

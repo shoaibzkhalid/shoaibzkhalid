@@ -7,14 +7,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-vercel',
-      options: {
-        // (optional) Prints metrics in the console when true
-        debug: false,
-      },
-    },
-
-    {
       resolve: '@wkocjan/gatsby-theme-intro',
       options: {
         contentPath: 'content/',
@@ -36,24 +28,6 @@ module.exports = {
           // safelist: ['safelist'], // Don't remove this selector
         },
         // More options defined here https://purgecss.com/configuration.html#options
-      },
-    },
-
-    {
-      resolve: 'gatsby-plugin-favicons',
-      options: {
-        logo: './static/favicon.ico',
-        appName: 'My Website',
-        background: '#fff',
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          yandex: false,
-          windows: false,
-        },
       },
     },
   ],
