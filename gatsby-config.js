@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     description: 'Personal page of Shoaib Khalid',
     locale: 'en',
-    title: 'Shoaib -  React Native Developer',
+    // title: 'Shoaib -  React Native Developer',
     // formspreeEndpoint: "https://formspree.io/f/{your-id}",
   },
   plugins: [
@@ -38,7 +38,5 @@ module.exports = {
         // More options defined here https://purgecss.com/configuration.html#options
       },
     },
-
-    // 'gatsby-plugin-no-javascript', // <-- Here is the plugin, make sure it is included last in the plugins array.
   ],
 }
