@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "gatsby clean && gatsby develop",
     "push": "git add . && git commit -F release-notes.txt && git push cat main",
-    "prod": "gatsby build && vercel",
-    "apply-patch": "npx patch-package @wkocjan/gatsby-theme-intro"
+    "prod": "gatsby build && vercel"
   },
   "dependencies": {
     "@wkocjan/gatsby-theme-intro": "github:shoaibzkhalid/gatsby-theme-intro",
@@ -17,5 +16,8 @@
     "patch-package": "^8.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "gatsby-plugin-favicons": "^2.0.0"
   }
 }

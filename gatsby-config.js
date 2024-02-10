@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     description: 'Personal page of Shoaib Khalid',
     locale: 'en',
-    // title: 'Shoaib -  React Native Developer',
+    title: 'Shoaib -  React Native Developer',
     // formspreeEndpoint: "https://formspree.io/f/{your-id}",
   },
   plugins: [
@@ -36,6 +36,24 @@ module.exports = {
           // safelist: ['safelist'], // Don't remove this selector
         },
         // More options defined here https://purgecss.com/configuration.html#options
+      },
+    },
+
+    {
+      resolve: 'gatsby-plugin-favicons',
+      options: {
+        logo: './static/favicon.ico',
+        appName: 'My Website',
+        background: '#fff',
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          yandex: false,
+          windows: false,
+        },
       },
     },
   ],
