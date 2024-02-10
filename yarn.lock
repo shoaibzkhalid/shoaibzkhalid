@@ -2136,7 +2136,7 @@
 
 "@wkocjan/gatsby-theme-intro@github:shoaibzkhalid/gatsby-theme-intro":
   version "2.0.1"
-  resolved "https://codeload.github.com/shoaibzkhalid/gatsby-theme-intro/tar.gz/704e86a18b44e30f456f447f6165e0bce97b854d"
+  resolved "https://codeload.github.com/shoaibzkhalid/gatsby-theme-intro/tar.gz/3c13ba827a5f087772270c14c940ad87905c4b96"
   dependencies:
     autoprefixer "^10.2.5"
     color "^3.1.3"
