@@ -1,1 +1,1 @@
-My personal portfolio site.
+Hi there 🤓 My name is Shoaib. I am a meta-certified React Native Developer with 5 years of experience, expert in creating awesome, smooth user experiences by leveraging React Native's components and APIs. Ready to contribute expertise with dynamic teams in an exciting mobile development opportunity.
